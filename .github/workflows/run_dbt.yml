@@ -23,11 +23,10 @@ jobs:
     env:
       HOST: ${{ secrets.HOST }}
       DATABASE: ${{ secrets.DATABASE }}
-      USERNAME: ${{ secrets.PROD_USERNAME }}
-      PASSWORD: ${{ secrets.PROD_PASSWORD }}
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
       PORT: ${{ secrets.PORT }}
-      SCHEMA: ${{ secrets.PROD_SCHEMA }}
-
+      SCHEMA: ${{ secrets.SCHEMA }}
     steps:
     - uses: "actions/checkout@main"
 
